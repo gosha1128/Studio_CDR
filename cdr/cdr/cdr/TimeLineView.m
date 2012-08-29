@@ -8,11 +8,17 @@
 
 #import "TimeLineView.h"
 
+#import "AppDelegate.h"
+
+#import "PhaseView.h"
+
 @interface TimeLineView ()
 
 @end
 
 @implementation TimeLineView
+
+@synthesize phase=_phase;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -21,6 +27,18 @@
         // Custom initialization
     }
     return self;
+}
+
+
+-(IBAction) GoToPhase: (id)ctl
+{
+    AppDelegate *app = (AppDelegate *)[ [ UIApplication sharedApplication ] delegate ];
+    if ( app.phaseController == nil )
+    {
+        app.phaseController = [ [ [ PhaseView alloc ] initWithNibName:@"PhaseView" bundle:nil ] autorelease ];
+    }
+    
+    app.window.rootViewController = app.phaseController;
 }
 
 -(void) viewDidAppear:(BOOL)animated

@@ -10,5 +10,8 @@
 
 @interface TimeLineView : UIViewController
 
--(IBAction)
+@property (retain, atomic) IBOutlet UIButton *phase;
+
+-(IBAction) GoToPhase: (id)ctl;
+
 @end
