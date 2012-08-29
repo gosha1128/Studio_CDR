@@ -60,6 +60,9 @@
                    //CGRectMake(0, 0, 500, 500):@"FILM_REEL":2 ] autorelease ];
     [ self.view addSubview:self.fmv ];
     
+    // z order...
+    [ self.view bringSubviewToFront:self.phase ];
+    
 }
 
 - (void)viewDidUnload
