@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MyMovieView.h"
+
 @interface TimeLineView : UIViewController
 
 @property (retain, atomic) IBOutlet UIButton *phase;
+
+@property (retain, atomic) MyMovieView *fmv;
 
 -(IBAction) GoToPhase: (id)ctl;
 

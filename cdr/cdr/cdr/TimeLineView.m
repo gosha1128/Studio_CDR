@@ -12,6 +12,8 @@
 
 #import "PhaseView.h"
 
+#import "MyMovieView.h"
+
 @interface TimeLineView ()
 
 @end
@@ -19,6 +21,7 @@
 @implementation TimeLineView
 
 @synthesize phase=_phase;
+@synthesize fmv=_fmv;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,13 +46,20 @@
 
 -(void) viewDidAppear:(BOOL)animated
 {
-    self.view.backgroundColor = [ UIColor greenColor ];
+    //self.view.backgroundColor = [ UIColor greenColor ];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.fmv = [ [ [ MyMovieView alloc ] 
+                   initWithFrame:
+                  CGRectMake(0, 0, 1024, 768):@"homepage_resize_h264":2 ] autorelease ];
+                   //CGRectMake(0, 0, 500, 500):@"FILM_REEL":2 ] autorelease ];
+    [ self.view addSubview:self.fmv ];
+    
 }
 
 - (void)viewDidUnload
