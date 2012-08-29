@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B303388815EEA8B900D74AFF /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B303388715EEA8B900D74AFF /* splashscreen.png */; };
 		B387486315EE8FB100AA7332 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387486215EE8FB100AA7332 /* UIKit.framework */; };
 		B387486515EE8FB100AA7332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387486415EE8FB100AA7332 /* Foundation.framework */; };
 		B387486715EE8FB100AA7332 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387486615EE8FB100AA7332 /* CoreGraphics.framework */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B303388715EEA8B900D74AFF /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
 		B387485E15EE8FB100AA7332 /* cdr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cdr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B387486215EE8FB100AA7332 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B387486415EE8FB100AA7332 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,6 +118,7 @@
 		B387487F15EE920000AA7332 /* splash */ = {
 			isa = PBXGroup;
 			children = (
+				B303388715EEA8B900D74AFF /* splashscreen.png */,
 				B387488515EE924D00AA7332 /* SplashView.h */,
 				B387488615EE924D00AA7332 /* SplashView.m */,
 				B387488715EE924D00AA7332 /* SplashView.xib */,
@@ -217,6 +220,7 @@
 				B387488915EE924D00AA7332 /* SplashView.xib in Resources */,
 				B387489015EE955B00AA7332 /* TimeLineView.xib in Resources */,
 				B387489615EE9C6000AA7332 /* PhaseView.xib in Resources */,
+				B303388815EEA8B900D74AFF /* splashscreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +348,7 @@
 				B387487E15EE8FB100AA7332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
