@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		B303388815EEA8B900D74AFF /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B303388715EEA8B900D74AFF /* splashscreen.png */; };
+		B303388F15EEA9BC00D74AFF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B303388E15EEA9BC00D74AFF /* CoreMedia.framework */; };
+		B303389115EEA9CB00D74AFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B303389015EEA9CA00D74AFF /* QuartzCore.framework */; };
+		B303389315EEA9D500D74AFF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B303389215EEA9D500D74AFF /* MediaPlayer.framework */; };
+		B303389515EEA9DD00D74AFF /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B303389415EEA9DD00D74AFF /* CoreVideo.framework */; };
+		B303389915EEABC500D74AFF /* MyMovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = B303389815EEABC500D74AFF /* MyMovieView.m */; };
+		B303389E15EEADE800D74AFF /* AVPlayerDemoPlaybackView.m in Sources */ = {isa = PBXBuildFile; fileRef = B303389B15EEADE800D74AFF /* AVPlayerDemoPlaybackView.m */; };
+		B303389F15EEADE800D74AFF /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B303389D15EEADE800D74AFF /* PlayerView.m */; };
+		B30338A115EEAEA400D74AFF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30338A015EEAEA300D74AFF /* AVFoundation.framework */; };
+		B30338A315EEAFAA00D74AFF /* homepage_resize_h264.mov in Resources */ = {isa = PBXBuildFile; fileRef = B30338A215EEAFAA00D74AFF /* homepage_resize_h264.mov */; };
+		B30338A515EEB1C900D74AFF /* Tile8Playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = B30338A415EEB1C900D74AFF /* Tile8Playbutton.png */; };
+		B30338A715EEB22C00D74AFF /* FILM_REEL.mov in Resources */ = {isa = PBXBuildFile; fileRef = B30338A615EEB22C00D74AFF /* FILM_REEL.mov */; };
 		B387486315EE8FB100AA7332 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387486215EE8FB100AA7332 /* UIKit.framework */; };
 		B387486515EE8FB100AA7332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387486415EE8FB100AA7332 /* Foundation.framework */; };
 		B387486715EE8FB100AA7332 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387486615EE8FB100AA7332 /* CoreGraphics.framework */; };
@@ -26,6 +37,20 @@
 
 /* Begin PBXFileReference section */
 		B303388715EEA8B900D74AFF /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
+		B303388E15EEA9BC00D74AFF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B303389015EEA9CA00D74AFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B303389215EEA9D500D74AFF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B303389415EEA9DD00D74AFF /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B303389715EEABC500D74AFF /* MyMovieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMovieView.h; sourceTree = "<group>"; };
+		B303389815EEABC500D74AFF /* MyMovieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMovieView.m; sourceTree = "<group>"; };
+		B303389A15EEADE800D74AFF /* AVPlayerDemoPlaybackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerDemoPlaybackView.h; sourceTree = "<group>"; };
+		B303389B15EEADE800D74AFF /* AVPlayerDemoPlaybackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerDemoPlaybackView.m; sourceTree = "<group>"; };
+		B303389C15EEADE800D74AFF /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		B303389D15EEADE800D74AFF /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		B30338A015EEAEA300D74AFF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B30338A215EEAFAA00D74AFF /* homepage_resize_h264.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = homepage_resize_h264.mov; path = ../../../../../../../../../Animations/homepage_resize_h264.mov; sourceTree = "<group>"; };
+		B30338A415EEB1C900D74AFF /* Tile8Playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tile8Playbutton.png; sourceTree = "<group>"; };
+		B30338A615EEB22C00D74AFF /* FILM_REEL.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = FILM_REEL.mov; sourceTree = "<group>"; };
 		B387485E15EE8FB100AA7332 /* cdr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cdr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B387486215EE8FB100AA7332 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B387486415EE8FB100AA7332 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,6 +80,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30338A115EEAEA400D74AFF /* AVFoundation.framework in Frameworks */,
+				B303389515EEA9DD00D74AFF /* CoreVideo.framework in Frameworks */,
+				B303389315EEA9D500D74AFF /* MediaPlayer.framework in Frameworks */,
+				B303389115EEA9CB00D74AFF /* QuartzCore.framework in Frameworks */,
+				B303388F15EEA9BC00D74AFF /* CoreMedia.framework in Frameworks */,
 				B387486315EE8FB100AA7332 /* UIKit.framework in Frameworks */,
 				B387486515EE8FB100AA7332 /* Foundation.framework in Frameworks */,
 				B387486715EE8FB100AA7332 /* CoreGraphics.framework in Frameworks */,
@@ -64,9 +94,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B303389615EEABA700D74AFF /* mymovieview */ = {
+			isa = PBXGroup;
+			children = (
+				B30338A415EEB1C900D74AFF /* Tile8Playbutton.png */,
+				B303389A15EEADE800D74AFF /* AVPlayerDemoPlaybackView.h */,
+				B303389B15EEADE800D74AFF /* AVPlayerDemoPlaybackView.m */,
+				B303389C15EEADE800D74AFF /* PlayerView.h */,
+				B303389D15EEADE800D74AFF /* PlayerView.m */,
+				B303389715EEABC500D74AFF /* MyMovieView.h */,
+				B303389815EEABC500D74AFF /* MyMovieView.m */,
+			);
+			name = mymovieview;
+			sourceTree = "<group>";
+		};
 		B387485315EE8FB000AA7332 = {
 			isa = PBXGroup;
 			children = (
+				B30338A015EEAEA300D74AFF /* AVFoundation.framework */,
+				B303389415EEA9DD00D74AFF /* CoreVideo.framework */,
+				B303389215EEA9D500D74AFF /* MediaPlayer.framework */,
+				B303389015EEA9CA00D74AFF /* QuartzCore.framework */,
+				B303388E15EEA9BC00D74AFF /* CoreMedia.framework */,
 				B387486815EE8FB100AA7332 /* cdr */,
 				B387486115EE8FB100AA7332 /* Frameworks */,
 				B387485F15EE8FB100AA7332 /* Products */,
@@ -94,6 +143,7 @@
 		B387486815EE8FB100AA7332 /* cdr */ = {
 			isa = PBXGroup;
 			children = (
+				B303389615EEABA700D74AFF /* mymovieview */,
 				B387489715EE9CAF00AA7332 /* _archive */,
 				B387489115EE9B1700AA7332 /* phase */,
 				B387488B15EE954600AA7332 /* timeline */,
@@ -138,6 +188,8 @@
 		B387488B15EE954600AA7332 /* timeline */ = {
 			isa = PBXGroup;
 			children = (
+				B30338A615EEB22C00D74AFF /* FILM_REEL.mov */,
+				B30338A215EEAFAA00D74AFF /* homepage_resize_h264.mov */,
 				B387488C15EE955B00AA7332 /* TimeLineView.h */,
 				B387488D15EE955B00AA7332 /* TimeLineView.m */,
 				B387488E15EE955B00AA7332 /* TimeLineView.xib */,
@@ -221,6 +273,9 @@
 				B387489015EE955B00AA7332 /* TimeLineView.xib in Resources */,
 				B387489615EE9C6000AA7332 /* PhaseView.xib in Resources */,
 				B303388815EEA8B900D74AFF /* splashscreen.png in Resources */,
+				B30338A315EEAFAA00D74AFF /* homepage_resize_h264.mov in Resources */,
+				B30338A515EEB1C900D74AFF /* Tile8Playbutton.png in Resources */,
+				B30338A715EEB22C00D74AFF /* FILM_REEL.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +292,9 @@
 				B387488815EE924D00AA7332 /* SplashView.m in Sources */,
 				B387488F15EE955B00AA7332 /* TimeLineView.m in Sources */,
 				B387489515EE9C6000AA7332 /* PhaseView.m in Sources */,
+				B303389915EEABC500D74AFF /* MyMovieView.m in Sources */,
+				B303389E15EEADE800D74AFF /* AVPlayerDemoPlaybackView.m in Sources */,
+				B303389F15EEADE800D74AFF /* PlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
