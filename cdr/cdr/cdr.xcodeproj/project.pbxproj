@@ -16,9 +16,9 @@
 		B303389E15EEADE800D74AFF /* AVPlayerDemoPlaybackView.m in Sources */ = {isa = PBXBuildFile; fileRef = B303389B15EEADE800D74AFF /* AVPlayerDemoPlaybackView.m */; };
 		B303389F15EEADE800D74AFF /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B303389D15EEADE800D74AFF /* PlayerView.m */; };
 		B30338A115EEAEA400D74AFF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30338A015EEAEA300D74AFF /* AVFoundation.framework */; };
-		B30338A315EEAFAA00D74AFF /* homepage_resize_h264.mov in Resources */ = {isa = PBXBuildFile; fileRef = B30338A215EEAFAA00D74AFF /* homepage_resize_h264.mov */; };
 		B30338A515EEB1C900D74AFF /* Tile8Playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = B30338A415EEB1C900D74AFF /* Tile8Playbutton.png */; };
 		B30338A715EEB22C00D74AFF /* FILM_REEL.mov in Resources */ = {isa = PBXBuildFile; fileRef = B30338A615EEB22C00D74AFF /* FILM_REEL.mov */; };
+		B30338A915EEB5CF00D74AFF /* homepage_resize_h264.mov in Resources */ = {isa = PBXBuildFile; fileRef = B30338A815EEB5CF00D74AFF /* homepage_resize_h264.mov */; };
 		B387486315EE8FB100AA7332 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387486215EE8FB100AA7332 /* UIKit.framework */; };
 		B387486515EE8FB100AA7332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387486415EE8FB100AA7332 /* Foundation.framework */; };
 		B387486715EE8FB100AA7332 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387486615EE8FB100AA7332 /* CoreGraphics.framework */; };
@@ -48,9 +48,9 @@
 		B303389C15EEADE800D74AFF /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
 		B303389D15EEADE800D74AFF /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
 		B30338A015EEAEA300D74AFF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		B30338A215EEAFAA00D74AFF /* homepage_resize_h264.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = homepage_resize_h264.mov; path = ../../../../../../../../../Animations/homepage_resize_h264.mov; sourceTree = "<group>"; };
 		B30338A415EEB1C900D74AFF /* Tile8Playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tile8Playbutton.png; sourceTree = "<group>"; };
 		B30338A615EEB22C00D74AFF /* FILM_REEL.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = FILM_REEL.mov; sourceTree = "<group>"; };
+		B30338A815EEB5CF00D74AFF /* homepage_resize_h264.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = homepage_resize_h264.mov; sourceTree = "<group>"; };
 		B387485E15EE8FB100AA7332 /* cdr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cdr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B387486215EE8FB100AA7332 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B387486415EE8FB100AA7332 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -188,8 +188,8 @@
 		B387488B15EE954600AA7332 /* timeline */ = {
 			isa = PBXGroup;
 			children = (
+				B30338A815EEB5CF00D74AFF /* homepage_resize_h264.mov */,
 				B30338A615EEB22C00D74AFF /* FILM_REEL.mov */,
-				B30338A215EEAFAA00D74AFF /* homepage_resize_h264.mov */,
 				B387488C15EE955B00AA7332 /* TimeLineView.h */,
 				B387488D15EE955B00AA7332 /* TimeLineView.m */,
 				B387488E15EE955B00AA7332 /* TimeLineView.xib */,
@@ -273,9 +273,9 @@
 				B387489015EE955B00AA7332 /* TimeLineView.xib in Resources */,
 				B387489615EE9C6000AA7332 /* PhaseView.xib in Resources */,
 				B303388815EEA8B900D74AFF /* splashscreen.png in Resources */,
-				B30338A315EEAFAA00D74AFF /* homepage_resize_h264.mov in Resources */,
 				B30338A515EEB1C900D74AFF /* Tile8Playbutton.png in Resources */,
 				B30338A715EEB22C00D74AFF /* FILM_REEL.mov in Resources */,
+				B30338A915EEB5CF00D74AFF /* homepage_resize_h264.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
