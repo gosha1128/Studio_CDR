@@ -53,8 +53,8 @@
         self.next = YES;
         
         AppDelegate *app = (AppDelegate *)[ [ UIApplication sharedApplication ] delegate ];
-        app.timelineController = [[[TimeLineView alloc] initWithNibName:@"TimeLineView" bundle:nil] autorelease ];
-        app.window.rootViewController = app.timelineController;
+        
+        [ app GoToTimeline ];
     }
 }
 
@@ -65,7 +65,8 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
+    if ( interfaceOrientation == UIInterfaceOrientationLandscapeLeft ) return YES;
+	else return NO;
 }
 
 @end

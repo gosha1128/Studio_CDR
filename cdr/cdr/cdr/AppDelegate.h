@@ -12,6 +12,7 @@
 @class SplashView;
 @class TimeLineView;
 @class PhaseView;
+@class KeyPeopleView;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -24,5 +25,11 @@
 @property (strong, nonatomic) TimeLineView *timelineController;
 
 @property (strong, nonatomic) PhaseView *phaseController;
+
+@property (strong, nonatomic) KeyPeopleView *keypeopleController;
+
+-(void) GoToTimeline;
+
+-(void) GoToKeypeople;
 
 @end

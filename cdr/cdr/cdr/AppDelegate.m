@@ -12,6 +12,10 @@
 
 #import "SplashView.h"
 
+#import "TimeLineView.h"
+
+#import "KeyPeopleView.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -19,6 +23,30 @@
 @synthesize splashController=_splashController;
 @synthesize timelineController=_timelineController;
 @synthesize phaseController=_phaseController;
+@synthesize keypeopleController=_keypeopleController;
+
+
+-(void) GoToTimeline
+{
+    if (self.timelineController==nil)
+    {
+        self.timelineController = 
+            [[[TimeLineView alloc] initWithNibName:@"TimeLineView" bundle:nil] autorelease ];
+    }
+    
+    self.window.rootViewController = self.timelineController;
+}
+
+-(void) GoToKeypeople
+{
+    if (self.keypeopleController==nil)
+    {
+        self.keypeopleController = 
+        [[[KeyPeopleView alloc] initWithNibName:@"KeyPeopleView" bundle:nil] autorelease ];
+    }
+    
+    self.window.rootViewController = self.keypeopleController;
+}
 
 - (void)dealloc
 {

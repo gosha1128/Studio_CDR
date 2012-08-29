@@ -22,6 +22,7 @@
 
 @synthesize phase=_phase;
 @synthesize fmv=_fmv;
+@synthesize menubutton=_menubutton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,9 +45,30 @@
     app.window.rootViewController = app.phaseController;
 }
 
+-(void) viewWillAppear:(BOOL)animated
+{
+    [ super viewWillAppear:animated ];
+    
+    [ self.view bringSubviewToFront:self.menubutton];
+}
+
 -(void) viewDidAppear:(BOOL)animated
 {
+    [ super viewDidAppear:animated ];
+    
     //self.view.backgroundColor = [ UIColor greenColor ];
+    [ self.fmv play ];
+    
+}
+
+
+-(IBAction)GoToKeypeople:(id)obj
+{
+        
+    AppDelegate *app = (AppDelegate *)[ [ UIApplication sharedApplication ] delegate ];
+        
+    [ app GoToKeypeople ];
+    
 }
 
 - (void)viewDidLoad
@@ -74,7 +96,9 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
+	
+    if ( interfaceOrientation == UIInterfaceOrientationLandscapeLeft ) return YES;
+	else return NO;
 }
 
 @end

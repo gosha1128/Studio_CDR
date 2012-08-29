@@ -16,6 +16,9 @@
 
 @property (retain, atomic) MyMovieView *fmv;
 
+@property (retain, atomic) IBOutlet UIImageView *menubutton;
+
 -(IBAction) GoToPhase: (id)ctl;
+-(IBAction) GoToKeypeople: (id)ctl;
 
 @end

@@ -45,5 +45,6 @@
 //- (void) pause;
 //- (void)loadMoviePlayer;
 
+- (void) play;
 
 @end

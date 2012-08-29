@@ -1,18 +1,20 @@
 //
-//  PhaseView.m
+//  KeyPeopleView.m
 //  cdr
 //
 //  Created by George Williams on 8/29/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "PhaseView.h"
+#import "KeyPeopleView.h"
 
-@interface PhaseView ()
+#import "AppDelegate.h"
+
+@interface KeyPeopleView ()
 
 @end
 
-@implementation PhaseView
+@implementation KeyPeopleView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,17 +25,17 @@
     return self;
 }
 
--(void) viewDidAppear:(BOOL)animated
+
+-(IBAction) GoToTimeLine:(id)obj
 {
-    
+    AppDelegate *app = (AppDelegate *)[[ UIApplication sharedApplication] delegate ];
+    [ app GoToTimeline ];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    self.view.backgroundColor = [ UIColor blueColor ];
 }
 
 - (void)viewDidUnload
