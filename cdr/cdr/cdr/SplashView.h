@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+#import "PMenu.h"
+
 @interface SplashView : UIViewController
 
 @property (nonatomic) BOOL next;
+
+
+@property (retain, atomic) PMenu *pmenu;
+
+
+
+-(void) reset;
 
 @end

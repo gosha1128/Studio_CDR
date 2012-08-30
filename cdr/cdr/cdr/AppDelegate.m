@@ -16,6 +16,12 @@
 
 #import "KeyPeopleView.h"
 
+#import "PortfolioView.h"
+
+#import "InvestorsView.h"
+
+#import "ThomasView.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -24,9 +30,34 @@
 @synthesize timelineController=_timelineController;
 @synthesize phaseController=_phaseController;
 @synthesize keypeopleController=_keypeopleController;
+@synthesize portfolioController=_portfolioController;
+@synthesize investorsController=_investorsController;
+@synthesize thomasController=_thomasController;
+@synthesize warned=_warned;
 
+-(void) GoToHome
+{
+    
+    [ self.splashController reset ];
+    
+    self.window.rootViewController = self.splashController;
+}
 
--(void) GoToTimeline
+-(void) GoToPortfolio
+{
+    if (self.portfolioController==nil)
+    {
+        self.portfolioController =
+            [[[PortfolioView alloc] initWithNibName:@"PortfolioView" bundle:nil] autorelease ];
+    }
+
+    
+    [ self.portfolioController reset ];
+    
+    self.window.rootViewController = self.portfolioController;
+}
+
+-(void) GoToFund7
 {
     if (self.timelineController==nil)
     {
@@ -34,18 +65,56 @@
             [[[TimeLineView alloc] initWithNibName:@"TimeLineView" bundle:nil] autorelease ];
     }
     
+    
+    [ self.timelineController reset ];
+    
     self.window.rootViewController = self.timelineController;
 }
+
 
 -(void) GoToKeypeople
 {
     if (self.keypeopleController==nil)
     {
-        self.keypeopleController = 
+        self.keypeopleController =
         [[[KeyPeopleView alloc] initWithNibName:@"KeyPeopleView" bundle:nil] autorelease ];
     }
     
+    
+    [ self.keypeopleController reset ];
+    
+    
     self.window.rootViewController = self.keypeopleController;
+}
+
+
+-(void) GoToInvestors
+{
+    if (self.investorsController==nil)
+    {
+        self.investorsController =
+            [[[InvestorsView alloc] initWithNibName:@"InvestorsView" bundle:nil] autorelease ];
+    }
+    
+    
+    [ self.investorsController reset ];
+    
+    self.window.rootViewController = self.investorsController;
+}
+
+
+-(void) GoToThomas
+{
+    if (self.thomasController==nil)
+    {
+        self.thomasController =
+        [[[ThomasView alloc] initWithNibName:@"ThomasView" bundle:nil] autorelease ];
+    }
+    
+    
+    [ self.thomasController reset ];
+    
+    self.window.rootViewController = self.thomasController;
 }
 
 - (void)dealloc
@@ -55,8 +124,50 @@
     [super dealloc];
 }
 
+#if 0
+-(void) report_memory {
+    struct task_basic_info info;
+    mach_msg_type_number_t size = sizeof(info);
+    kern_return_t kerr = task_info(mach_task_self(),
+                                   TASK_BASIC_INFO,
+                                   (task_info_t)&info,
+                                   &size);
+    if( kerr == KERN_SUCCESS ) {
+        NSLog(@"Memory in use (in bytes): %u", info.resident_size);
+    } else {
+        NSLog(@"Error with task_info(): %s", mach_error_string(kerr));
+    }
+}
+#endif
+
+-(void) lowMemNotification:(id)obj
+{
+    
+    //[ self report_memory ];
+    
+#if 1
+    if (!self.warned)
+    {
+        self.warned = YES;
+    
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"App Low Memory"
+                                                    message:@"App Low Memory"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+#endif
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(lowMemNotification:)
+                                                 name: UIApplicationDidReceiveMemoryWarningNotification
+                                               object:nil];
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     

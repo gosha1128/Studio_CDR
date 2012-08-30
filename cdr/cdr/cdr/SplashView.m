@@ -12,6 +12,8 @@
 
 #import "TimeLineView.h"
 
+#import "PMenu.h"
+
 @interface SplashView ()
 
 @end
@@ -19,6 +21,8 @@
 @implementation SplashView
 
 @synthesize next=_next;
+
+@synthesize pmenu=_pmenu;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,19 +38,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.view.backgroundColor = [ UIColor redColor ];
+    //self.view.backgroundColor = [ UIColor redColor ];
+    
+    self.pmenu = [ [ PMenu alloc ] init:self: YES ];
     
 }
 
+-(void) reset
+{
+    [ self.pmenu collapse:NO ];
+    
+    
+}
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
 }
 
-
-
--(void)GoToTimeline:(id)obj
+-(void)GoToFund7:(id)obj
 {
     if ( !self.next )
     {
@@ -54,13 +64,21 @@
         
         AppDelegate *app = (AppDelegate *)[ [ UIApplication sharedApplication ] delegate ];
         
-        [ app GoToTimeline ];
+        [ app GoToFund7 ];
     }
+}
+
+-(void)ShowMenu
+{
+    [ self.pmenu show];
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    [ self performSelector:@selector(GoToTimeline:) withObject:self afterDelay:3 ];
+    
+    [ super viewDidAppear:animated];
+    
+    [ self performSelector:@selector(ShowMenu) withObject:self afterDelay:3 ];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

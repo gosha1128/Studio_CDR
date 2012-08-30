@@ -13,6 +13,9 @@
 @class TimeLineView;
 @class PhaseView;
 @class KeyPeopleView;
+@class PortfolioView;
+@class InvestorsView;
+@class ThomasView;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -28,8 +31,25 @@
 
 @property (strong, nonatomic) KeyPeopleView *keypeopleController;
 
--(void) GoToTimeline;
+@property (strong, nonatomic) PortfolioView *portfolioController;
+
+@property (strong, nonatomic) InvestorsView *investorsController;
+
+@property (strong, nonatomic) ThomasView *thomasController;
+
+@property (nonatomic) BOOL warned;
+
+-(void) GoToFund7;
 
 -(void) GoToKeypeople;
+
+-(void) GoToHome;
+
+-(void) GoToInvestors;
+
+-(void) GoToPortfolio;
+
+-(void) GoToThomas;
+
 
 @end

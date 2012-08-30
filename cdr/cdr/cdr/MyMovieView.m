@@ -117,7 +117,8 @@
 
 - (void) oneFingerTwoTaps
 {
-
+    return;
+    
     if ([ self handleBleed ])
     {
         return;
@@ -135,9 +136,20 @@
     }
 }
 
+-(void) restart
+{
+    
+    if (self.playing)
+    {
+        [self stop];
+    }
+    
+    [self play];
+    
+}
 
 
-- (id)initWithFrame:(CGRect)frame:(NSString *)mv:(int)offset
+- (id)initWithFrame:(CGRect)frame:(NSString *)mv:(int)offset:(NSString *)poster
 {
     self = [super initWithFrame:frame];
     if (self) 
@@ -161,12 +173,24 @@
         [ self addGestureRecognizer:self.tap ];
         
         //  Play button...
-        UIImage *img = [ UIImage imageNamed:@"Tile8Playbutton.png" ];
-        float w = img.size.width;
-        float h = img.size.height;
-        CGRect rect = CGRectMake( frame.size.width/2.0, frame.size.height/2.0, w, h );
-        self.playv = [ [ [ UIImageView alloc] initWithFrame:rect ] autorelease ];
-        [ self.playv setImage:img ];
+        if (poster!=nil)
+        {
+            UIImage *img = [ UIImage imageNamed:poster ];
+            CGRect rect = CGRectMake( 0,0, 1024,768 );
+            self.playv = [ [ [ UIImageView alloc] initWithFrame:rect ] autorelease ];
+            [ self.playv setImage:img ];
+        }
+        else
+        {
+            UIImage *img = [ UIImage imageNamed:@"Tile8Playbutton.png" ];
+        
+            float w = img.size.width;
+            float h = img.size.height;
+            CGRect rect = CGRectMake( frame.size.width/2.0, frame.size.height/2.0, w, h );
+            self.playv = [ [ [ UIImageView alloc] initWithFrame:rect ] autorelease ];
+            [ self.playv setImage:img ];
+        }
+        
         [ self addSubview:self.playv ];
         
     }

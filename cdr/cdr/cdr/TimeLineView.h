@@ -10,15 +10,23 @@
 
 #import "MyMovieView.h"
 
-@interface TimeLineView : UIViewController
+#import "PMenu.h"
 
-@property (retain, atomic) IBOutlet UIButton *phase;
+@interface TimeLineView : UIViewController <UIScrollViewDelegate>
 
+//@property (retain, atomic) IBOutlet UIButton *phase;
+
+@property (retain, atomic) MyMovieView *fmv2;
 @property (retain, atomic) MyMovieView *fmv;
 
-@property (retain, atomic) IBOutlet UIImageView *menubutton;
+@property (retain, atomic) PMenu *pmenu;
 
--(IBAction) GoToPhase: (id)ctl;
--(IBAction) GoToKeypeople: (id)ctl;
+@property (retain, atomic) UIScrollView *sv;
+
+//-(IBAction) GoToPhase: (id)ctl;
+//-(IBAction) GoToKeypeople: (id)ctl;
+
+
+-(void) reset;
 
 @end
