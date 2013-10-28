@@ -483,7 +483,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: George Williams (WQ48A2BRFJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: George Williams (WQ48A2BRFJ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -508,7 +509,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: George Williams (WQ48A2BRFJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: George Williams (WQ48A2BRFJ)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -532,8 +534,8 @@
 				GCC_PREFIX_HEADER = "cdr/cdr-Prefix.pch";
 				INFOPLIST_FILE = "cdr/cdr-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "95EE72ED-E003-422F-8B5B-D759CA551D6E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "95EE72ED-E003-422F-8B5B-D759CA551D6E";
+				PROVISIONING_PROFILE = "1DD3F21A-84CB-4719-B2C1-5AFBA3AF0ECC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1DD3F21A-84CB-4719-B2C1-5AFBA3AF0ECC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -547,8 +549,8 @@
 				GCC_PREFIX_HEADER = "cdr/cdr-Prefix.pch";
 				INFOPLIST_FILE = "cdr/cdr-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "95EE72ED-E003-422F-8B5B-D759CA551D6E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "95EE72ED-E003-422F-8B5B-D759CA551D6E";
+				PROVISIONING_PROFILE = "1DD3F21A-84CB-4719-B2C1-5AFBA3AF0ECC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1DD3F21A-84CB-4719-B2C1-5AFBA3AF0ECC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

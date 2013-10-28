@@ -16,7 +16,7 @@
 @property (retain, atomic) UIButton *btn;
 @property (nonatomic) BOOL expanded;
 
--(id) init: (UIViewController *)parent:(BOOL)vis;
+-(id) init:(UIViewController *)parent :(BOOL)vis;
 
 
 -(void) show;

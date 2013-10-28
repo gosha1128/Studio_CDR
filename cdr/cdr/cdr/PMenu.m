@@ -18,7 +18,7 @@
 @synthesize btn=_btn;
 @synthesize expanded=_expanded;
 
--(id) init: (UIViewController *)parent:(BOOL)hidden;
+-(id) init:(UIViewController *)parent :(BOOL)hidden;
 {
     self = [ super init];
     

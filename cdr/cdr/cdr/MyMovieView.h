@@ -40,7 +40,7 @@
 
 //@property (assign) enum Section section;
 
-- (id)initWithFrame:(CGRect)frame:(NSString *)mv:(int)offset:(NSString *)poster;
+- (id)initWithFrame:(CGRect)frame :(NSString *)mv :(int)offset :(NSString *)poster;
 - (void) stop;
 //- (void) pause;
 //- (void)loadMoviePlayer;

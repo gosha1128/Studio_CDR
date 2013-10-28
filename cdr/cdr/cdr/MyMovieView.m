@@ -149,7 +149,7 @@
 }
 
 
-- (id)initWithFrame:(CGRect)frame:(NSString *)mv:(int)offset:(NSString *)poster
+- (id)initWithFrame:(CGRect)frame :(NSString *)mv :(int)offset :(NSString *)poster
 {
     self = [super initWithFrame:frame];
     if (self) 

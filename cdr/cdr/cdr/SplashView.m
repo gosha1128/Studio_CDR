@@ -40,7 +40,7 @@
     
     //self.view.backgroundColor = [ UIColor redColor ];
     
-    self.pmenu = [ [ PMenu alloc ] init:self: YES ];
+    self.pmenu = [ [ PMenu alloc ] init:self :YES];
     
 }
 
